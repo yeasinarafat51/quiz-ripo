@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { AiFillEye} from 'react-icons/ai';
+
 
 
 import './Quiz.css';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -50,7 +50,7 @@ const Quiz = ({quiz}) => {
        
 
 <div className='quiz-container'>
-    <button onClick={() => doubleTo(correctAnswer)}><FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></button>
+    <button onClick={() => doubleTo(correctAnswer)}><AiFillEye size={25}/></button>
    
             <h1>{question}</h1>
            
